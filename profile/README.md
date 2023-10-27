@@ -7,7 +7,7 @@ This is the GitHub Organization for the unofficial blink(1) user group, a commun
 Here are some of the projects actively maintained by our community:
 
 - [gid](https://github.com/b1ug/gid) - Yet another Go package tailored for interacting with USB Human Interface Devices (HID).
-- [blink1-go](https://github.com/b1ug/blink1-go) - A Go SDK for Blink(1) USB RGB LED notification devices, tightened to perfection.
+- [blink1-go](https://github.com/b1ug/blink1-go) - Yet another Go SDK for Blink(1) USB RGB LED notification devices, tightened to perfection.
 
 ## Get Involved 🙋‍♀️
 
