@@ -13,11 +13,6 @@ Here are some of the projects actively maintained by our community:
 
 ## Get Involved 🙋‍♀️
 
-We welcome all kinds of contributions, whether it's reporting bugs, suggesting improvements, or making pull requests. To get started with contributing:
-
-1. [Star](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars) our repository.
-2. Fork and clone the project you're interested in.
-3. Make your changes.
-4. Submit your pull request.
+We welcome all kinds of contributions, whether it's reporting bugs, suggesting improvements, or making pull requests.
 
 Happy coding! 👩‍💻
