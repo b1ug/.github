@@ -1,19 +1,41 @@
-# Welcome to blink(1) user group 🧙
+# blink(1) user group
 
-<img src="image/mk2-long.jpg" width="600"><img src="image/logo.jpg" width="175">
+Community software for the [blink(1) USB light](https://blink1.thingm.com/).
+We are an independent user group, not the hardware manufacturer.
 
-This is the GitHub Organization for the unofficial blink(1) user group, a community of developers and enthusiasts passionate about the [blink(1) USB RGB LED notification device](https://blink1.thingm.com/). Whether you're a seasoned consumer of the device's capabilities or just getting started with your first colorful notifications, we're here to share, learn, and grow together in this vibrant community.
+[简体中文](README.zh-CN.md)
 
-## Our Projects 🌈
+## Start with nb1
 
-Here are some of the projects actively maintained by our community:
+[Install nb1 and open its local workbench](https://b1ug.github.io/nb1-docs/getting-started).
+One native executable provides the CLI, optional daemon and embedded Web interface.
+The matching MCP adapter and Agent Skill are optional release downloads.
 
-- [gid](https://github.com/b1ug/gid) - Yet another Go package tailored for interacting with USB Human Interface Devices (HID).
-- [blink1-go](https://github.com/b1ug/blink1-go) - Yet another Go SDK for blink(1) USB RGB LED notification devices, tightened to perfection.
-- [nb1](https://github.com/b1ug/nb1) - A brand new CLI tool for blink(1) featuring modern features, our latest project in its initial release phase.
+## Choose the right project
 
-## Get Involved 🙋‍♀️
+| Project | What it provides |
+| --- | --- |
+| [nb1](https://github.com/b1ug/nb1) | Native blink(1) CLI, daemon, HTTP API, device ownership and local storage. |
+| [nb1 Documentation](https://github.com/b1ug/nb1-docs) · [website](https://b1ug.github.io/nb1-docs/) | English/Chinese installation guides, API reference and Agent examples. Static; no USB access. |
+| [nb1 Embedded Workbench](https://github.com/b1ug/nb1-workbench) | Frontend source compiled into nb1. Uses the local daemon's HTTP API at `/demo/`. |
+| [nb1 Browser Tools](https://github.com/b1ug/nb1-browser-tools) | Independent WebHID development preview and experimental Chrome reminder extension. Owns USB directly. |
+| [Homebrew tap](https://github.com/b1ug/homebrew-tap) | Source installation for macOS and Linux, with explicit `nb1 service` management. |
+| [blink1-go](https://github.com/b1ug/blink1-go) | Go SDK for blink(1) device commands, parsing and capabilities. |
+| [GID](https://github.com/b1ug/gid) | Go USB HID access for native applications. |
+| [colorkit](https://github.com/b1ug/colorkit) | Reusable pure-Go color types, CSS names, Hex and HSV conversions. |
 
-We welcome all kinds of contributions, whether it's reporting bugs, suggesting improvements, or making pull requests.
+The embedded workbench and Browser Tools are separate interfaces. Stop or
+Disconnect the current controller before another one opens the same lamp.
+Browser tools do not install a native daemon; the documentation site controls
+no device. Check each repository's release and support notes before installation.
 
-Happy coding! 👩‍💻
+Go modules supply native Go code. The embedded frontend is maintained separately
+and imported as a source-pinned, hash-verified static bundle; normal nb1 builds
+need neither Node nor a recursive submodule checkout.
+
+## Contribute
+
+Use the relevant repository for bugs, documentation or proposed improvements.
+Stable releases, development previews and planned APIs are labeled separately.
+Hardware support is reported with its actual model, OS and test scope; screen
+previews and cached RGB are not optical measurements.
