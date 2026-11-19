@@ -7,7 +7,7 @@ We are an independent user group, not the hardware manufacturer.
 
 ## Start with nb1
 
-[Install nb1 and open its local workbench](https://b1ug.github.io/nb1-docs/getting-started).
+[Install nb1 and open its local workbench](https://b1ug.github.io/nb1-guide/getting-started).
 One native executable provides the CLI, optional daemon and embedded Web interface.
 The matching MCP adapter and Agent Skill are optional release downloads.
 
@@ -16,9 +16,10 @@ The matching MCP adapter and Agent Skill are optional release downloads.
 | Project | What it provides |
 | --- | --- |
 | [nb1](https://github.com/b1ug/nb1) | Native blink(1) CLI, daemon, HTTP API, device ownership and local storage. |
-| [nb1 Documentation](https://github.com/b1ug/nb1-docs) · [website](https://b1ug.github.io/nb1-docs/) | English/Chinese installation guides, API reference and Agent examples. Static; no USB access. |
-| [nb1 Embedded Workbench](https://github.com/b1ug/nb1-workbench) | Frontend source compiled into nb1. Uses the local daemon's HTTP API at `/demo/`. |
-| [nb1 Browser Tools](https://github.com/b1ug/nb1-browser-tools) | Independent WebHID development preview and experimental Chrome reminder extension. Owns USB directly. |
+| [nb1 Guide](https://github.com/b1ug/nb1-guide) · [website](https://b1ug.github.io/nb1-guide/) | English/Chinese installation guides, API reference and Agent examples. Static; no USB access. |
+| [nb1 Debugger](https://github.com/b1ug/nb1-debugger) | Frontend source compiled into nb1. Uses the local daemon's HTTP API at `/demo/`. |
+| [nb1 WebHID](https://github.com/b1ug/nb1-webhid) | Independent WebHID development preview and experimental Chrome reminder extension. Owns USB directly. |
+| [blink(1) Models](https://github.com/b1ug/blink1-models) | Versioned MK2 enclosure geometry, assembly and attribution for the debugger, browser app and guides. |
 | [Homebrew tap](https://github.com/b1ug/homebrew-tap) | Source installation for macOS and Linux, with explicit `nb1 service` management. |
 | [blink1-go](https://github.com/b1ug/blink1-go) | Go SDK for blink(1) device commands, parsing and capabilities. |
 | [GID](https://github.com/b1ug/gid) | Go USB HID access for native applications. |
